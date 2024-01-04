@@ -1,0 +1,90 @@
+/home/<ANONYMOUS>/code/ReVeal/getset_root.py:6: DtypeWarning: Columns (20,22,23,27,28,29) have mixed types. Specify dtype option on import or set low_memory=False.
+  msr_df = pd.read_csv("data/MSR/MSR_data_cleaned.csv", index_col=0)
+82 deduplicated between Devign and MSR
+buffer_overflow 37291
+input_validation 25514
+privilege_escalation_authorization 32749
+resource_allocation_free 33748
+value_propagation_errors 15126
+not grouped:
+CWE-16 58
+CWE-17 684
+CWE-18 49
+CWE-361 28
+CWE-362 6073
+CWE-388 294
+CWE-436 80
+CWE-754 387
+CWE-755 23
+CWE-834 327
+nan 36205
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:00<00:01,  2.50it/s] 40%|████      | 2/5 [00:00<00:01,  2.48it/s] 60%|██████    | 3/5 [00:01<00:00,  2.41it/s] 80%|████████  | 4/5 [00:01<00:00,  2.52it/s]100%|██████████| 5/5 [00:01<00:00,  2.81it/s]100%|██████████| 5/5 [00:01<00:00,  2.65it/s]
+file: data/subsets/bug_type/bugtype_buffer_overflow.csv
+label distribution:
+target
+0    0.920597
+1    0.079403
+dtype: float64
+unique projects: 157
+examples: 37291
+file: data/subsets/bug_type/bugtype_input_validation.csv
+label distribution:
+target
+0    0.946186
+1    0.053814
+dtype: float64
+unique projects: 93
+examples: 25514
+file: data/subsets/bug_type/bugtype_privilege_escalation_authorization.csv
+label distribution:
+target
+0    0.94922
+1    0.05078
+dtype: float64
+unique projects: 99
+examples: 32749
+file: data/subsets/bug_type/bugtype_resource_allocation_free.csv
+label distribution:
+target
+0    0.954397
+1    0.045603
+dtype: float64
+unique projects: 84
+examples: 33748
+file: data/subsets/bug_type/bugtype_value_propagation_errors.csv
+label distribution:
+target
+0    0.944268
+1    0.055732
+dtype: float64
+unique projects: 85
+examples: 15126
+data/subsets/bug_type/bugtype_resource_allocation_free.csv
+33748
+data/subsets/bug_type/bugtype_input_validation.csv
+25514
+data/subsets/bug_type/bugtype_buffer_overflow.csv
+37291
+data/subsets/bug_type/bugtype_value_propagation_errors.csv
+15126
+data/subsets/bug_type/bugtype_privilege_escalation_authorization.csv
+32749
+/home/<ANONYMOUS>/code/ReVeal/getset_root.py:6: DtypeWarning: Columns (20,22,23,27,28,29) have mixed types. Specify dtype option on import or set low_memory=False.
+  msr_df = pd.read_csv("data/MSR/MSR_data_cleaned.csv", index_col=0)
+82 deduplicated between Devign and MSR
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:01<00:05,  1.28s/it] 40%|████      | 2/5 [00:02<00:02,  1.02it/s] 60%|██████    | 3/5 [00:02<00:01,  1.05it/s] 80%|████████  | 4/5 [00:03<00:00,  1.12it/s]100%|██████████| 5/5 [00:04<00:00,  1.34it/s]100%|██████████| 5/5 [00:04<00:00,  1.17it/s]
+data/subsets/bug_type/bugtype_buffer_overflow.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_buffer_overflow/test.csv test 3729
+data/subsets/bug_type/bugtype_buffer_overflow.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_buffer_overflow/train.csv train 29833
+data/subsets/bug_type/bugtype_buffer_overflow.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_buffer_overflow/valid.csv valid 3729
+data/subsets/bug_type/bugtype_input_validation.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_input_validation/test.csv test 2551
+data/subsets/bug_type/bugtype_input_validation.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_input_validation/train.csv train 20412
+data/subsets/bug_type/bugtype_input_validation.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_input_validation/valid.csv valid 2551
+data/subsets/bug_type/bugtype_privilege_escalation_authorization.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_privilege_escalation_authorization/test.csv test 3274
+data/subsets/bug_type/bugtype_privilege_escalation_authorization.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_privilege_escalation_authorization/train.csv train 26201
+data/subsets/bug_type/bugtype_privilege_escalation_authorization.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_privilege_escalation_authorization/valid.csv valid 3274
+data/subsets/bug_type/bugtype_resource_allocation_free.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_resource_allocation_free/test.csv test 3374
+data/subsets/bug_type/bugtype_resource_allocation_free.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_resource_allocation_free/train.csv train 27000
+data/subsets/bug_type/bugtype_resource_allocation_free.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_resource_allocation_free/valid.csv valid 3374
+data/subsets/bug_type/bugtype_value_propagation_errors.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_value_propagation_errors/test.csv test 1512
+data/subsets/bug_type/bugtype_value_propagation_errors.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_value_propagation_errors/train.csv train 12102
+data/subsets/bug_type/bugtype_value_propagation_errors.csv /home/<ANONYMOUS>/code/LineVul/data/subsets/bug_type/bugtype_value_propagation_errors/valid.csv valid 1512

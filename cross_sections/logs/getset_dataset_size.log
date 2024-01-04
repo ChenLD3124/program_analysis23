@@ -1,0 +1,83 @@
+/home/<ANONYMOUS>/code/ReVeal/getset_root.py:6: DtypeWarning: Columns (20,22,23,27,28,29) have mixed types. Specify dtype option on import or set low_memory=False.
+  msr_df = pd.read_csv("data/MSR/MSR_data_cleaned.csv", index_col=0)
+getset_dataset_size.py:14: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  imbalanced_df["split"] = split(imbalanced_df)
+82 deduplicated between Devign and MSR
+imbalanced_df
+       dataset  example_index  ... vul  split
+0          MSR              0  ...   0  train
+1          MSR              1  ...   0  train
+2          MSR              2  ...   0   test
+3          MSR              3  ...   0  train
+4          MSR              4  ...   0  train
+...        ...            ...  ...  ..    ...
+215867  Devign          27313  ...   1  train
+215868  Devign          27314  ...   1  train
+215869  Devign          27315  ...   1  valid
+215870  Devign          27316  ...   1  train
+215871  Devign          27317  ...   1  train
+
+[215872 rows x 6 columns]
+balanced_df
+       dataset  example_index  ... vul  split
+0       Devign              0  ...   1  train
+1       Devign              1  ...   1   test
+2       Devign              2  ...   1  train
+3       Devign              3  ...   1  train
+4       Devign              4  ...   1  train
+...        ...            ...  ...  ..    ...
+215867     MSR         188631  ...   1  train
+215868     MSR         188632  ...   1  train
+215869     MSR         188633  ...   1  train
+215870     MSR         188634  ...   1  train
+215871     MSR         188635  ...   1  train
+
+[38213 rows x 6 columns]
+imbalanced: test = 21587.00 train = 17306.00 valid = 2122.00
+balanced: test = 3690.00 train = 3113.00 valid = 375.00
+imbalanced: test = 21587.00 train = 34602.00 valid = 4255.00
+balanced: test = 3690.00 train = 6211.00 valid = 773.00
+imbalanced: test = 21587.00 train = 51869.00 valid = 6416.00
+balanced: test = 3690.00 train = 9190.00 valid = 1139.00
+imbalanced: test = 21587.00 train = 69122.00 valid = 8592.00
+balanced: test = 3690.00 train = 12238.00 valid = 1516.00
+imbalanced: test = 21587.00 train = 86479.00 valid = 10663.00
+balanced: test = 3690.00 train = 15370.00 valid = 1860.00
+imbalanced: test = 21587.00 train = 103793.00 valid = 12778.00
+balanced: test = 3690.00 train = 18377.00 valid = 2249.00
+imbalanced: test = 21587.00 train = 121029.00 valid = 14970.00
+balanced: test = 3690.00 train = 21486.00 valid = 2641.00
+imbalanced: test = 21587.00 train = 138231.00 valid = 17197.00
+balanced: test = 3690.00 train = 24475.00 valid = 3048.00
+imbalanced: test = 21587.00 train = 155481.00 valid = 19375.00
+balanced: test = 3690.00 train = 27540.00 valid = 3455.00
+imbalanced: test = 21587.00 train = 172698.00 valid = 21587.00
+balanced: test = 3690.00 train = 30619.00 valid = 3904.00
+data/subsets/dataset_size/imbalanced_0.1.csv
+data/subsets/dataset_size/imbalanced_0.2.csv
+data/subsets/dataset_size/imbalanced_0.3.csv
+data/subsets/dataset_size/imbalanced_0.4.csv
+data/subsets/dataset_size/imbalanced_0.5.csv
+data/subsets/dataset_size/imbalanced_0.6.csv
+data/subsets/dataset_size/imbalanced_0.7.csv
+data/subsets/dataset_size/imbalanced_0.8.csv
+data/subsets/dataset_size/imbalanced_0.9.csv
+data/subsets/dataset_size/imbalanced_1.0.csv
+data/subsets/dataset_size/balanced_0.1.csv
+data/subsets/dataset_size/balanced_0.2.csv
+data/subsets/dataset_size/balanced_0.3.csv
+data/subsets/dataset_size/balanced_0.4.csv
+data/subsets/dataset_size/balanced_0.5.csv
+data/subsets/dataset_size/balanced_0.6.csv
+data/subsets/dataset_size/balanced_0.7.csv
+data/subsets/dataset_size/balanced_0.8.csv
+data/subsets/dataset_size/balanced_0.9.csv
+data/subsets/dataset_size/balanced_1.0.csv
+check mutually exclusive for imbalanced:   0%|          | 0/10 [00:00<?, ?it/s]check mutually exclusive for imbalanced:  10%|█         | 1/10 [00:00<00:02,  3.56it/s]check mutually exclusive for imbalanced:  20%|██        | 2/10 [00:00<00:02,  3.14it/s]check mutually exclusive for imbalanced:  30%|███       | 3/10 [00:00<00:02,  3.12it/s]check mutually exclusive for imbalanced:  40%|████      | 4/10 [00:01<00:01,  3.94it/s]check mutually exclusive for imbalanced:  50%|█████     | 5/10 [00:01<00:01,  3.56it/s]check mutually exclusive for imbalanced:  60%|██████    | 6/10 [00:01<00:00,  4.54it/s]check mutually exclusive for imbalanced:  70%|███████   | 7/10 [00:01<00:00,  5.12it/s]check mutually exclusive for imbalanced:  80%|████████  | 8/10 [00:01<00:00,  4.63it/s]check mutually exclusive for imbalanced:  90%|█████████ | 9/10 [00:02<00:00,  4.52it/s]check mutually exclusive for imbalanced: 100%|██████████| 10/10 [00:02<00:00,  4.86it/s]check mutually exclusive for imbalanced: 100%|██████████| 10/10 [00:02<00:00,  4.27it/s]
+check test sets identical for imbalanced:   0%|          | 0/9 [00:00<?, ?it/s]check test sets identical for imbalanced: 100%|██████████| 9/9 [00:00<00:00, 155.70it/s]
+check mutually exclusive for balanced:   0%|          | 0/10 [00:00<?, ?it/s]check mutually exclusive for balanced:  10%|█         | 1/10 [00:00<00:00,  9.32it/s]check mutually exclusive for balanced:  40%|████      | 4/10 [00:00<00:00, 20.92it/s]check mutually exclusive for balanced:  70%|███████   | 7/10 [00:00<00:00, 17.17it/s]check mutually exclusive for balanced:  90%|█████████ | 9/10 [00:00<00:00, 16.90it/s]check mutually exclusive for balanced: 100%|██████████| 10/10 [00:00<00:00, 16.63it/s]
+check test sets identical for balanced:   0%|          | 0/9 [00:00<?, ?it/s]check test sets identical for balanced: 100%|██████████| 9/9 [00:00<00:00, 1510.80it/s]
